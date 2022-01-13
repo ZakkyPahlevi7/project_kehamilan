@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           title: Text(
             title,
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+            style: GoogleFonts.poppins(
+                color: Colors.black, fontWeight: FontWeight.bold),
           ),
           backgroundColor: Colors.white,
         ),
@@ -47,10 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.fromLTRB(0, 20, 125, 10),
+                margin: EdgeInsets.fromLTRB(0, 30, 100, 10),
                 child: Text(
                   'Hari Pertama Haid Terakhir (HPHT)',
-                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  style: GoogleFonts.poppins(
+                      fontSize: 20.0, fontWeight: FontWeight.w500),
                 ),
               ),
               Container(
@@ -62,10 +65,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         suffixIcon: Icon(Icons.date_range)),
                   )),
               Container(
-                margin: EdgeInsets.fromLTRB(0, 20, 210, 10),
+                margin: EdgeInsets.fromLTRB(0, 20, 180, 10),
                 child: Text(
                   'Lama siklus haid rata rata',
-                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  style: GoogleFonts.poppins(
+                      fontSize: 20.0, fontWeight: FontWeight.w500),
                 ),
               ),
               Container(
@@ -77,13 +81,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   )),
               Container(
-                margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.fromLTRB(195, 25, 195, 25,), shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0))
-                  ),
+                      padding: EdgeInsets.fromLTRB(
+                        187,
+                        23,
+                        187,
+                        23,
+                      ),
+                      shape: new RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0))),
                   onPressed: () {},
-                  child: const Text('Hitung', style: TextStyle(fontSize: 17),),
+                  child: Text(
+                    'HITUNG',
+                    style: GoogleFonts.poppins(fontSize: 19, fontWeight: FontWeight.w500),
+                  ),
                 ),
               )
             ],
