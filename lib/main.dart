@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         hintText: 'dd/mm/yyyy',
-                        suffixIcon: Icon(Icons.date_range_outlined)),
+                        suffixIcon: Icon(Icons.date_range)),
                   )),
               Container(
                 margin: EdgeInsets.fromLTRB(0, 20, 210, 10),
@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.fromLTRB(195, 25, 195, 25)
+                    padding: EdgeInsets.fromLTRB(195, 25, 195, 25,), shape: new RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0))
                   ),
                   onPressed: () {},
                   child: const Text('Hitung', style: TextStyle(fontSize: 17),),
