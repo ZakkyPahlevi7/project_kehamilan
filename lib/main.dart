@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(
             title,
             style: GoogleFonts.poppins(
-                color: Colors.black, fontWeight: FontWeight.bold),
+                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
           ),
           backgroundColor: Colors.white,
         ),
@@ -49,53 +49,57 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.fromLTRB(0, 30, 100, 10),
+                margin: EdgeInsets.fromLTRB(0, 30, 170, 10),
                 child: Text(
                   'Hari Pertama Haid Terakhir (HPHT)',
                   style: GoogleFonts.poppins(
-                      fontSize: 20.0, fontWeight: FontWeight.w500),
+                      fontSize: 16.0, fontWeight: FontWeight.w500),
                 ),
               ),
               Container(
-                  margin: EdgeInsets.fromLTRB(30, 0, 30, 0),
+                  height: 45,
+                  margin: EdgeInsets.fromLTRB(30, 5, 30, 15),
                   child: TextField(
+                    cursorHeight: 30,
+                    style: TextStyle(height: 1.5),
                     decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         hintText: 'dd/mm/yyyy',
+                        hintStyle: GoogleFonts.poppins(fontSize: 16),
                         suffixIcon: Icon(Icons.date_range)),
                   )),
               Container(
-                margin: EdgeInsets.fromLTRB(0, 20, 180, 10),
+                margin: EdgeInsets.fromLTRB(0, 20, 235, 10),
                 child: Text(
                   'Lama siklus haid rata rata',
                   style: GoogleFonts.poppins(
-                      fontSize: 20.0, fontWeight: FontWeight.w500),
+                      fontSize: 16.0, fontWeight: FontWeight.w500),
                 ),
               ),
               Container(
-                  margin: EdgeInsets.fromLTRB(30, 0, 30, 0),
+                  height: 45,
+                  margin: EdgeInsets.fromLTRB(30, 0, 30, 10),
                   child: TextField(
+                    cursorHeight: 30,
+                    style: TextStyle(height: 1.5),
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'Masukkan jumlah hari',
                     ),
                   )),
               Container(
-                margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
+                width: double.infinity,
+                height: 40,
+                margin: EdgeInsets.symmetric(horizontal: 28, vertical: 30),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.fromLTRB(
-                        187,
-                        23,
-                        187,
-                        23,
-                      ),
                       shape: new RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0))),
                   onPressed: () {},
                   child: Text(
                     'HITUNG',
-                    style: GoogleFonts.poppins(fontSize: 19, fontWeight: FontWeight.w500),
+                    style: GoogleFonts.poppins(
+                        fontSize: 16, fontWeight: FontWeight.w500),
                   ),
                 ),
               )
